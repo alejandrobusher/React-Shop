@@ -10,6 +10,7 @@ module.exports = {
   resolve: {
     extensions: [".js", ".jsx"],
   },
+  mode: "development",
   module: {
     rules: [
       {
@@ -35,9 +36,4 @@ module.exports = {
       filename: "./index.html",
     }),
   ],
-  devServer: {
-    contentBase: path.join(__dirname, "dist"),
-    compress: true,
-    port: 3000,
-  },
 };
