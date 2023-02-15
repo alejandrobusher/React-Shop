@@ -14,11 +14,11 @@ import NotFound from '../pages/NotFound';
 import '../styles/global.css';
 
 const App = () => {
-    return (
-        <BrowserRouter>
-            <Layout>
-                <Routes>
-                    <Route path="/" element={Home} />
+	return (
+		<BrowserRouter>
+			<Layout>
+				<Routes>
+					<Route path="/" element={Home} />
 					<Route path="/login" element={Login} />
 					<Route path="/password-recovery" element={PasswordRecovery} />
 					<Route path="/send-email" element={SendEmail} />
@@ -28,10 +28,10 @@ const App = () => {
 					<Route path="/checkout" element={Checkout} />
 					<Route path="/orders" element={Orders} />
 					<Route path="*" element={NotFound} />
-                </Routes>
-            </Layout> 
-        </BrowserRouter>
-    );
+				</Routes>
+			</Layout>
+		</BrowserRouter>
+	);
 }
 
 export default App;

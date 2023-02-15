@@ -1,23 +1,23 @@
 import React from 'react';
-import "../styles/Login.scss"
+import '../styles/Login.scss';
 
 const Login = () => {
-    return (
-    <div classname="login">
-        <div classname="form-container">
-            <img src="./logos/logo_yard_sale.svg" alt="logo" classname="logo" />
-            <h1 classname="title">Create a new password</h1>
-            <p classname="subtitle">Enter a new password for your account</p>
-            <form action="/" classname="form">
-            <label htmlFor="password" classname="label">Password</label>
-            <input type="password" id="password" placeholder="*********" classname="input input-password" />
-            <label htmlFor="new-password" classname="label">Re-enter password</label>
-            <input type="password" id="new-password" placeholder="*********" classname="input input-password" />
-            <input type="submit" defaultValue="Confirm" classname="primary-button login-button" />
-            </form>
-        </div>
-    </div>
-    );
+	return (
+		<div className="Login">
+			<div className="Login-container">
+				<img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
+				<form action="/" className="form">
+					<label htmlFor="email" className="label">Email address</label>
+					<input type="text" id="email" placeholder="platzi@example.cm" className="input input-email" />
+					<label htmlFor="password" className="label">Password</label>
+					<input type="password" id="password" placeholder="*********" className="input input-password" />
+					<input type="submit" value="Log in" className="primary-button login-button" />
+					<a href="/">Forgot my password</a>
+				</form>
+				<button className="secondary-button signup-button">Sign up</button>
+			</div>
+		</div>
+	);
 }
 
 export default Login;
